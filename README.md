@@ -1,19 +1,28 @@
 # Project: Developer Roadmap Journal
 
-## What am I building?
+A personal learning journal for my Associate Full Stack Engineer roadmap
 
-I am trying to build a responsive web application that tracks my progress through the software engineer curriculum.
+## What I am practicing
 
-## What files do I need?
+- HTML structure
+- CSS basics
+- Git and GitHub
+- Building from scratch
+
+## What I am building
+
+I am trying to build a responsive web application that tracks my progress through associate full stack engineer roadmap curriculum.
+
+## What files I need
 
 - index.html
 - style.css
 
-## What should the user see or be able to do?
+## What the user see or be able to do
 
 The user should expect to so a Developer Roadmap Journal webpage. It contains several sections including: projects, skills, weekly wins, questions/blockers and next steps. It should also contain a list of current goals and a brief goals summary section.
 
-## How will I know it works?
+## How I know it works
 
 I will know that it works because the webpage will be formatted properly using the correct html tags. The page will also be responsive; therefore, allowing users to view the page on various devices.
 
