@@ -69,6 +69,29 @@ div {
   padding: 10px 20px;
 }
 
+#mainArticle p {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.list > ul,
+#skills section ul,
+#mainNav ul,
+#siteAds ul,
+ol {
+  list-style-type: square; /* Square bullets for the first level */
+  padding-left: 20px; /* Add spacing if a CSS reset removed default padding */
+}
+.list ul ul {
+  list-style-type: circle; /* Circle bullets for embedded lists */
+  margin-left: 15px; /* Add margin to indent the nested list */
+}
+
+/* Style for all list items at any level */
+.list li {
+  line-height: 1.5; /* Add vertical space between items */
+}
+
 #mainNav {
   grid-area: nav;
   padding: 10px 20px;
@@ -105,7 +128,7 @@ footer {
   background: #9fd3c7;
 }
 
-@media all and (max-width: 575px) {
+@media all and (max-width: 780px) {
   body {
     grid-template-areas:
       "header"
