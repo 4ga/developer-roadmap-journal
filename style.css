@@ -5,136 +5,53 @@
 }
 
 body {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "nav upper"
-    "nav skills"
-    "nav article"
-    "nav ads"
-    "footer footer";
-  grid-template-rows: 90px 80px 1fr 1fr 1fr 70px;
-  grid-template-columns: 20% 1fr;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.5px;
+  background: #f5f7fb;
+  color: #222;
 }
 
-h4 {
+header,
+footer {
+  background: #9fd3c7;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #ececec;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
-header,
-footer,
-article,
-nav,
-div {
-  padding: 0.5em;
-}
-
-#upper,
-#mainArticle,
-#mainNav,
-#skills section,
-#siteAds section {
-  background: #ececec;
-  border-radius: 5px;
-}
-
-#pageHeader {
-  grid-area: header;
-  text-align: center;
-  background: #9fd3c7;
-}
-
-#pageFooter {
-  grid-area: footer;
-}
-
-#upper {
-  grid-area: upper;
-}
-
-#mainArticle {
-  grid-area: article;
-  padding: 10px 20px;
-}
-
-#mainArticle p {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.list > ul,
-#skills section ul,
-#mainNav ul,
-#siteAds ul,
+ul,
 ol {
-  list-style-type: square; /* Square bullets for the first level */
-  padding-left: 20px; /* Add spacing if a CSS reset removed default padding */
-}
-.list ul ul {
-  list-style-type: circle; /* Circle bullets for embedded lists */
-  margin-left: 15px; /* Add margin to indent the nested list */
+  padding-left: 1.25rem;
 }
 
-/* Style for all list items at any level */
-.list li {
-  line-height: 1.5; /* Add vertical space between items */
+ul ul {
+  padding-left: 1.25rem;
+  list-style-type: circle;
 }
 
-#mainNav {
-  grid-area: nav;
-  padding: 10px 20px;
-}
-
-#skills {
-  grid-area: skills;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-#skills section {
-  padding: 10px 30px;
-  grid-column-gap: 10px;
-}
-
-#siteAds {
-  grid-area: ads;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem; /* Adds space between grid items */
-  padding: 0.5rem;
-}
-
-#siteAds section {
-  padding: 10px 30px;
-  background: #ececec;
-}
-
-footer {
-  text-align: center;
-  font-weight: bold;
-  background: #9fd3c7;
-}
-
-@media all and (max-width: 780px) {
-  body {
-    grid-template-areas:
-      "header"
-      "nav"
-      "upper"
-      "skills"
-      "article"
-      "ads"
-      "footer";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+@media (max-width: 780px) {
+  main {
     grid-template-columns: 1fr;
   }
 }
